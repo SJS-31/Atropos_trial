@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+#app {
+  
+  width: 100%;
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+  margin: 0;
+  padding: 0;
+  font-family: "Euclid Circular A", "Poppins";
+  background: url("./Astro.jpg");
+  color: #f9f9f9;
+  height: 100vh;
+  background-size: contain;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
+
+.my-atropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 320px;
+  border-radius: 16px;
+  background-size: 120%;
+  background-position: center;
+  transition: 0.5s;
+  opacity: 0.9;
+  align-items: center;
+}
+
+.my-atropos img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transform-style: preserve-3d;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.my-atropos h1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+#btn {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 0;
+  background: #221e6f;
+  color: #f9f9f9;
+  font-family: inherit;
+  margin-left: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn:hover{
+  background-color: aqua;
 }
